@@ -1,0 +1,13 @@
+# docker build -t your-registry/your-image-name:tag .
+#
+#  - So:
+#  docker build -t litdream/homeweb2-static:latest .
+
+
+# docker login
+
+
+# docker push your-registry/your-image-name:tag
+#
+#  - So:
+#  docker push litdream/homeweb2-static:latest

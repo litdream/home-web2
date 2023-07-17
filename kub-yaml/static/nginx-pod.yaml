@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: home-web2-pod
+  labels:
+    app: home-web2
+spec:
+  containers:
+  - name: home-web2-static
+    image: litdream/homeweb2-static:latest
+    ports:
+    - containerPort: 80
