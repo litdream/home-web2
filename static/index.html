@@ -1,10 +1,49 @@
+<!DOCTYPE html>
 <html>
-
-	<head>
-		<title>Home web2 </title>
-	</head>
-	<body>
-		This will be new website.
-	</body>
+  <head>
+    <title>Raynic Webapp</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      /* Add some basic styles to center the content */
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      /* Style the large title */
+      h1 {
+        font-size: 5em;
+        margin-bottom: 1em;
+        text-align: center;
+      }
+      /* Style the large buttons */
+      .button {
+        display: block;
+        width: 200px;
+        height: 80px;
+        font-size: 2em;
+        margin-bottom: 1em;
+        text-align: center;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      /* Style the hover effect for the buttons */
+      .button:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Raynic</h1>
+    <a href="https://raynic.net/app/auth/google/" class="button">Login with Google</a>
+    <a href="http://192.168.1.21/" class="button">Local Server</a>
+  </body>
 </html>
-
