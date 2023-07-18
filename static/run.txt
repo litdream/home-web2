@@ -2,11 +2,11 @@
 #
 #  - So:
 #  docker build -t litdream/homeweb2-static:latest .
-#  docker build -t litdream/homeweb2-static:v0.1 .
+#  docker build -t litdream/homeweb2-static:v0.2 .
 
 # To destroy previous image, and rebuild:  --no-cache
 #
-#  docker build --no-cache -t litdream/homeweb2-static:v0.1  .
+#  docker build --no-cache -t litdream/homeweb2-static:v0.2  .
 
 
 # docker login
@@ -16,4 +16,13 @@
 #
 #  - So:
 #  docker push litdream/homeweb2-static:latest
-#  docker push litdream/homeweb2-static:v0.1
+#  docker push litdream/homeweb2-static:v0.2
+
+# ---------------------
+# Docker local test
+#   docker run -p 80:8088  litdream/homeweb2-static:v0.2
+#
+# For debug, attach login to a running container
+#   docker ps
+#   docker exec -it 5436b60ea029 /bin/bash 
+#
