@@ -2,6 +2,11 @@
 #
 #  - So:
 #  docker build -t litdream/homeweb2-static:latest .
+#  docker build -t litdream/homeweb2-static:v0.1 .
+
+# To destroy previous image, and rebuild:  --no-cache
+#
+#  docker build --no-cache -t litdream/homeweb2-static:v0.1  .
 
 
 # docker login
@@ -11,3 +16,4 @@
 #
 #  - So:
 #  docker push litdream/homeweb2-static:latest
+#  docker push litdream/homeweb2-static:v0.1
