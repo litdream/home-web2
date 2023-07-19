@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: home-web2-deploy
+  labels:
+    app: home-web2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: home-web2-static-tmpl
+  template:
+    metadata:
+      name: home-web2-pod
+      labels:
+        app: home-web2-static-tmpl
+    spec:
+      containers:
+      - name: home-web2-static
+        image: litdream/homeweb2-static:v0.2
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+    
