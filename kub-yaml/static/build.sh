@@ -3,8 +3,8 @@
 # Temp, removing old pod
 kubectl delete pod home-web2-pod
 
-kubectl apply -f nginx-pod.yaml
-kubectl apply -f nginx-pod-service.yaml
+kubectl apply -f nginx-static-deploy.yaml
+kubectl apply -f nginx-static-service.yaml
 
 
 # If pod is annoying, ssh to it:
